@@ -20,7 +20,7 @@ data "aws_ami" "example" {
 
 
 resource "aws_instance" "web" {
-  ami           = data.aws_ami.example.id
+  ami           = ami-04145c8c86d2474c0
   instance_type = "t3.micro"
   subnet_id = data.aws_subnet.selected.id
 
